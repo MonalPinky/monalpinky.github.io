@@ -1,6 +1,18 @@
-#Title {
-  color: #10205e;
+h1 {
+  color: #0e1d74;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 45px;
+  text-shadow: 5px 5px 10px black;
 }
 header {
-  /* background-color: #55c3e5; */
+  background-color: #336f81;
+  padding-bottom: 0.3cm;
+}
+.footerLinks {
+  color: #336f81;
+  text-decoration: none;
+}
+.footerLinks a :hover {
+  color: #0e1d74;
+  background-color: #336f81;
 }
