@@ -14,36 +14,67 @@
   </head>
 
   <body>
-    <header><h1 class="text-center">Titan</h1></header>
-    <style></style>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header style="background-color: #eeeeee">
+      <h1 class="text-center">Titan</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
       <button
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="index1.html"
-            >Home <span class="sr-only">(current)</span></a
-          >
-          <a class="nav-link active" href="Contact.html">Contact us</a>
-          <a class="nav-link active" href="Renovations.html">Renovations</a>
-          <a class="nav-link active" href="Plumbing.html"
-            >Plumbing & Bathroom</a
-          >
-          <a class="nav-link active" href="AboutUs.html">About us</a>
-          <a class="nav-link active" href="Testimonials.html">Testimonials</a>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Products we Provide
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Kitchen and Bathroom</a>
+              <a class="dropdown-item" href="#"
+                >Home additions and expansions</a
+              >
+              <a class="dropdown-item" href="#">Ceilings & Roofing & panting</a>
+              <a class="dropdown-item" href="#">Tiling</a>
+              <a class="dropdown-item" href="#">Fencing</a>
+              <a class="dropdown-item" href="#">General maintenances</a>
+              <a class="dropdown-item" href="#">Building Repairs </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About us</a>
+          </li>
+        </ul>
       </div>
     </nav>
-
+    <!-- <div class="center">
+      <h2 class="text-center">Home</h2>
+    </div> -->
     <div
       id="carouselExampleIndicators"
       class="carousel slide d-flex justify-content-center"
@@ -65,21 +96,21 @@
         <div class="carousel-item active">
           <img
             class="img-responsive d-block w-100 sizeChange"
-            src="img/1.jpg"
+            src="img/Logo.png"
             alt="First slide"
           />
         </div>
         <div class="carousel-item">
           <img
             class="img-responsive d-block w-100 sizeChange"
-            src="img/2.png"
+            src="img/Bathroom.png"
             alt="Second slide"
           />
         </div>
         <div class="carousel-item">
           <img
             class="img-responsive d-block w-100 sizeChange"
-            src="img/3.png"
+            src="img/team-engineer-holding-helmet-standing-260nw-1936767382.webp"
             alt="Third slide"
           />
         </div>
@@ -224,50 +255,79 @@
       </div>
       <!-- Container-fluid -->
     </div>
-
-    <div class="container-fluid align-items-center">
-      <div class="row" style="padding-top: 1cm">
-        <div class="col-sm">
-          <h4>Products</h4>
-          <p><a class="footerLinks" href="#">Renovations</a></p>
-          <p><a class="footerLinks" href="#">Testimonials</a></p>
+    <div class="d-flex justify-content-center footer">
+      <div class="container-fluid">
+        <div class="row justify-content-md-center" style="padding-top: 1cm">
+          <div class="col-sm">
+            <h4 class="text-center fontsizeHeader">Products</h4>
+            <p class="text-center fontsize">
+              <a class="footerLinks" href="#">Kitchen and Bathroom</a>
+            </p>
+            <p class="text-center fontsize">
+              <a class="footerLinks" href="#">Home additions and expansions</a>
+            </p>
+            <p class="text-center fontsize">
+              <a class="footerLinks" href="#">Ceilings & Roofing & panting</a>
+            </p>
+            <p class="text-center fontsize">
+              <a class="footerLinks" href="#">Tiling</a>
+            </p>
+            <p class="text-center fontsize">
+              <a class="footerLinks" href="#">Fencing </a>
+            </p>
+            <p class="text-center fontsize">
+              <a class="footerLinks" href="#">General Maintainces </a>
+            </p>
+            <p class="text-center fontsize">
+              <a class="footerLinks" href="#">Building Repairs </a>
+            </p>
+          </div>
+          <div class="col-sm">
+            <h4 class="text-center fontsizeHeader">Other Links</h4>
+            <p class="text-center">
+              <a class="footerLinks fontsize" href="#">Testimonials</a>
+            </p>
+            <p class="text-center fontsize">
+              <a class="footerLinks" href="Contact.html">Contact us</a>
+            </p>
+            <p class="text-center fontsize">
+              <a class="footerLinks" href="Contact.html">About us</a>
+            </p>
+          </div>
+          <div class="col-sm">
+            <h4 class="text-center fontsizeHeader">Contact Us</h4>
+            <p class="text-center">
+              <a
+                href="https://www.flaticon.com/free-icons/phone"
+                title="phone icons"
+              >
+                <img src="img/telephone.png" style="width: 30px" alt=""
+              /></a>
+              066 263 0758
+            </p>
+            <p class="text-center">
+              <a
+                href="https://www.flaticon.com/free-icons/mail"
+                title="mail icons"
+                ><img src="img/email.png" style="width: 30px" alt=""
+              /></a>
+              gino7web@gmail.com
+            </p>
+          </div>
         </div>
-        <div class="col-sm">
-          <h4>Other Links</h4>
-          <p><a class="footerLinks" href="#">Testimonials</a></p>
-          <p><a class="footerLinks" href="#">Testimonials</a></p>
-        </div>
-        <div class="col-sm">
-          <h4>Contact Us</h4>
-          <p>
-            <a
-              href="https://www.flaticon.com/free-icons/phone"
-              title="phone icons"
+        <div class="row justify-content-md-center">
+          <div class="col-sm">
+            <div class="d-flex justify-content-center">
+              <hr style="width: 50%; align-items: center" class="text-center" />
+            </div>
+            <h6
+              class="text-center"
+              style="text-decoration: none; font-weight: 200"
             >
-              <img src="img/telephone.png" style="width: 30px" alt=""
-            /></a>
-            066 263 0758
-          </p>
-          <p>
-            <a
-              href="https://www.flaticon.com/free-icons/mail"
-              title="mail icons"
-              ><img src="img/email.png" style="width: 30px" alt=""
-            /></a>
-            gino7web@gmail.com
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm">
-          <hr style="width: 50%; align-items: center" class="text-center" />
-          <h6
-            class="text-center"
-            style="text-decoration: none; font-weight: 200"
-          >
-            Website Designed and hosted by: Izak Du plooy | 081 81 50525 |
-            zduplooy13@gmail.com
-          </h6>
+              Website Designed and hosted by: Izak Du plooy | 081 81 50525 |
+              zduplooy13@gmail.com
+            </h6>
+          </div>
         </div>
       </div>
     </div>
