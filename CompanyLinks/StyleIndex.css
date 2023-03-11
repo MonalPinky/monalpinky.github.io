@@ -7,6 +7,11 @@ header h1 {
   text-shadow: 5px 5px 10px black;
   font-style: italic;
 }
+@media screen and (max-width: 768px) {
+  .TitleText h2 {
+    color: blue;
+  }
+}
 nav li:hover {
   /* background-color: #336f81; */
   color: white;
