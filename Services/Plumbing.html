@@ -57,7 +57,7 @@
                 >Kitchen and Bathroom</a
               >
               <a class="dropdown-item" href="HomeAddExp.html"
-                >Home additions and Alterations</a
+                >Home Additions & Alterations</a
               >
               <a class="dropdown-item" href="CellingRoofs.html"
                 >Ceilings & Roofing & panting</a
@@ -99,8 +99,9 @@
     >
       <div class="container-sm">
         <h2
+          id="Title"
           class="text-center center"
-          style="text-shadow: 10px 6px 12px black; margin-left: -2.5cm"
+          style="text-shadow: 10px 6px 12px black"
         >
           Kitchen and Bathroom
         </h2>
@@ -242,7 +243,7 @@
             </p>
             <p class="text-center fontsize">
               <a class="footerLinks" href="HomeAddExp.html"
-                >Home additions and Alterations</a
+                >Home Additions & Alterations</a
               >
             </p>
             <p class="text-center fontsize">
@@ -322,7 +323,15 @@
         </div>
       </div>
     </div>
-
+    <script>
+      function getResolution() {
+        alert(screen.width + " " + screen.height);
+      }
+      // getResolution();
+      if (screen.width <= 720 && screen.height <= 1280) {
+        document.getElementById("Title").style.marginLeft = "-2.5cm";
+      }
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
