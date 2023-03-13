@@ -94,6 +94,13 @@
       style="height: 6.5cm"
     >
       <ol class="carousel-indicators">
+        <h2
+          class="text-center center"
+          id="Title"
+          style="text-shadow: 10px 6px 12px black"
+        >
+          Home
+        </h2>
         <li
           data-target="#carouselExampleIndicators"
           data-slide-to="0"
@@ -361,7 +368,19 @@
         </div>
       </div>
     </div>
-
+    <script>
+      function getResolution() {
+        alert(screen.width + " " + screen.height);
+      }
+      // getResolution();
+      if (screen.width <= 720 && screen.height <= 1280) {
+        document.getElementById("Title").style.marginRight = "-4cm";
+        document.getElementById("Title").style.marginTop = "-4.5cm";
+      } else {
+        document.getElementById("Title").style.marginRight = "-4cm";
+        document.getElementById("Title").style.marginTop = "-4.5cm";
+      }
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
