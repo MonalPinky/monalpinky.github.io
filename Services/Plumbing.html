@@ -152,9 +152,6 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
       </ol>
       <!-- <h3 id="PageHeader" class="text-center">Home</h3> -->
       <div class="carousel-inner">
@@ -164,45 +161,22 @@
           </div>
         </div>
         <div class="carousel-item active">
-          <img
-            src="../img/Logo.png"
-            srcset="../img/Bathroom.png 1000w, large.jpg 2000w"
-            alt="yah"
-          />
+          <img srcset="" alt="First Slide" id="Img1" />
         </div>
         <div class="carousel-item">
           <img
             class="img-responsive d-block w-100 sizeChange"
-            src="../img/Plumbing/After 1.jpg"
+            src=""
             alt="Second slide"
+            id="Img2"
           />
         </div>
         <div class="carousel-item">
           <img
             class="img-responsive d-block w-100 sizeChange"
-            src="../img/Plumbing/20211128_211001.jpg"
+            src=""
             alt="Third slide"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="img-responsive d-block w-100 sizeChange"
-            src="../img/Plumbing/20211027_155606.jpg"
-            alt="Third slide"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="img-responsive d-block w-100 sizeChange"
-            src="../img/Plumbing/20211027_155529.jpg"
-            alt="Third slide"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="img-responsive d-block w-100 sizeChange"
-            src="../img/Plumbing/20211027_155521.jpg"
-            alt="Third slide"
+            id="Img3"
           />
         </div>
       </div>
@@ -330,6 +304,23 @@
       // getResolution();
       if (screen.width <= 720 && screen.height <= 1280) {
         document.getElementById("Title").style.marginLeft = "-2.5cm";
+        document.getElementById("Img1").src = "../img/Plumbing/Mobile/1.jpg";
+        // .setAttribute("src", "../img/Plumbing/20211027_155339 (2).jpg");
+
+        document.getElementById("Img2").src = "../img/Plumbing/Mobile/2.jpg";
+
+        document
+          .getElementById("Img3")
+          .setAttribute("src", "../img/Plumbing/Mobile/20211027_155521.jpg");
+      } else {
+        document.getElementById("Img1").src =
+          "../img/Plumbing/Desktop/After 1.jpg";
+        // .setAttribute("src", "../img/Plumbing/20211027_155339 (2).jpg");
+
+        document.getElementById("Img2").src = "../img/Plumbing/Desktop/2.jpg";
+        document
+          .getElementById("Img3")
+          .setAttribute("src", "../img/Plumbing/Mobile/20211027_155521.jpg");
       }
     </script>
     <script
