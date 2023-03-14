@@ -26,10 +26,6 @@ nav li:hover {
   margin-top: 0.3cm;
   margin-bottom: 0.4cm;
 }
-.backgroundReno {
-  background-image: url("img/reno#.png");
-  padding: 3cm;
-}
 
 .Titlesize {
   /* margin-top: 1%; */

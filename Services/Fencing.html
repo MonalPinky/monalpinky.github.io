@@ -54,7 +54,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="Plumbing.html"
-                >Kitchen and Bathroom</a
+                >Kitchen & Bathroom</a
               >
               <a class="dropdown-item" href="HomeAddExp.html"
                 >Home Additions & Alterations</a
@@ -87,13 +87,14 @@
       </div>
     </nav>
     <div
-      class="Container-fluid backgroundReno"
+      class="Container-fluid"
+      id="DivTitle"
       style="
+        width: 100%;
         background-image: url(../img/Bathroom.png);
         background-repeat: no-repeat;
         background-position: center;
-        background-color: black;
-        padding: 4cm;
+        background-color: white;
       "
     >
       <h2
@@ -210,9 +211,7 @@
           <div class="col-sm">
             <h4 class="text-center fontsizeHeader">Services</h4>
             <p class="text-center fontsize">
-              <a class="footerLinks" href="Plumbing.html"
-                >Kitchen and Bathroom</a
-              >
+              <a class="footerLinks" href="Plumbing.html">Kitchen & Bathroom</a>
             </p>
             <p class="text-center fontsize">
               <a class="footerLinks" href="HomeAddExp.html"
@@ -302,7 +301,10 @@
       }
       // getResolution();
       if (screen.width <= 720 && screen.height <= 1280) {
-        document.getElementById("Title").style.marginLeft = "-1.7cm";
+        // document.getElementById("Title").style.marginLeft = "-1.7cm";
+        document.getElementById("DivTitle").style.padding = " 1cm";
+      } else {
+        document.getElementById("DIvTitle").style.padding = "1.7cm";
       }
     </script>
     <script
