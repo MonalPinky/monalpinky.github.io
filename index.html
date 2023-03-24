@@ -54,18 +54,18 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="Services/Plumbing.html"
-                >Kitchen & Bathroom</a
+                >Bathroom</a
               >
               <a class="dropdown-item" href="Services/HomeAddExp.html"
                 >Home Additions & Alterations</a
               >
               <a class="dropdown-item" href="Services/CellingRoofs.html"
-                >Ceilings & Roofing & panting</a
-              >
+                >Roof painting or Spraying
+              </a>
               <a class="dropdown-item" href="Services/Tiling.html">Tiling</a>
-              <a class="dropdown-item" href="Services/Fencing.html">Fencing</a>
+              <a class="dropdown-item" href="Services/Fencing.html">Plumbing</a>
               <a class="dropdown-item" href="Services/Maintenaces.html"
-                >General maintenances</a
+                >Maintenances</a
               >
               <a class="dropdown-item" href="Services/Repairs.html"
                 >Building Repairs
@@ -157,7 +157,7 @@
       </a>
     </div>
 
-    <div class="container-fluid" style="padding-top: 0.5cm; margin-left: 2cm">
+    <div class="container-fluid" style="padding-top: 0.5cm" id="ProjectTiles">
       <div class="container-fluid">
         <div class="row justify-content-md-center padding">
           <div class="col-lg exPadding">
@@ -187,7 +187,7 @@
                   alt=""
                 />
                 <div class="overlay">
-                  <h2>Kitchen & Bathroom</h2>
+                  <h2>Bathroom</h2>
                   <p>
                     <a href="Services/Plumbing.html">Show More</a>
                   </p>
@@ -267,7 +267,7 @@
                   alt=""
                 />
                 <div class="overlay">
-                  <h2>Fencing</h2>
+                  <h2>Plumbing</h2>
                   <p>
                     <a href="Services/Fencing.html">Show More</a>
                   </p>
@@ -288,9 +288,7 @@
           <div class="col-sm">
             <h4 class="text-center fontsizeHeader">Services</h4>
             <p class="text-center fontsize">
-              <a class="footerLinks" href="Services/Plumbing.html"
-                >Kitchen & Bathroom</a
-              >
+              <a class="footerLinks" href="Services/Plumbing.html">Bathroom</a>
             </p>
             <p class="text-center fontsize">
               <a class="footerLinks" href="Services/HomeAddExp.html"
@@ -299,19 +297,19 @@
             </p>
             <p class="text-center fontsize">
               <a class="footerLinks" href="Services/CellingRoofs.html"
-                >Ceilings & Roofing & panting</a
-              >
+                >Roof painting or Spraying
+              </a>
             </p>
             <p class="text-center fontsize">
               <a class="footerLinks" href="Services/Tiling.html">Tiling</a>
             </p>
             <p class="text-center fontsize">
-              <a class="footerLinks" href="Services/Fencing.html">Fencing </a>
+              <a class="footerLinks" href="Services/Fencing.html">Plumbing</a>
             </p>
             <p class="text-center fontsize">
               <a class="footerLinks" href="Services/Maintenaces.html"
-                >General Maintenances
-              </a>
+                >Maintenance</a
+              >
             </p>
             <p class="text-center fontsize">
               <a class="footerLinks" href="Services/Repairs.html"
@@ -390,6 +388,7 @@
         document.getElementById("Img3").src = "img/HomePage/M3.jpg";
       } else {
         //Images
+        document.getElementById("ProjectTiles").style.marginLeft = "1.5cm";
         document.getElementById("Img1").src = "img/HomePage/1.jpg";
         document.getElementById("Img2").src = "img/HomePage/2.jpg";
         document.getElementById("Img3").src = "img/HomePage/3.jpg";
