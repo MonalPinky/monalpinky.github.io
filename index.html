@@ -157,7 +157,7 @@
       </a>
     </div>
 
-    <div class="container-fluid" style="padding-top: 0.5cm">
+    <div class="container-fluid" style="padding-top: 0.5cm; margin-left: 2cm">
       <div class="container-fluid">
         <div class="row justify-content-md-center padding">
           <div class="col-lg exPadding">
@@ -228,7 +228,12 @@
                 <div class="overlay">
                   <h2>General maintenance & Repairs</h2>
                   <p>
-                    <a href="Services/Maintenaces.html">Show More</a>
+                    <a
+                      href="Services/Maintenaces.html"
+                      data-toggle="tooltip"
+                      title="Hooray!"
+                      >Show More</a
+                    >
                   </p>
                 </div>
               </div>
@@ -375,6 +380,7 @@
       function getResolution() {
         alert(screen.width + " " + screen.height);
       }
+
       // getResolution();
       if (screen.width <= 720 && screen.height <= 1280) {
         document.getElementById("Title").style.marginRight = "-4cm";
