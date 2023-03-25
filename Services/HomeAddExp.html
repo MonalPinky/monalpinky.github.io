@@ -52,7 +52,7 @@
               Services we Provide
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="Plumbing.html">Bathroom</a>
+              <a class="dropdown-item" href="Bathroom.html">Bathroom</a>
               <a class="dropdown-item disabled" href="HomeAddExp.html"
                 >Home Additions & Alterations</a
               >
@@ -60,7 +60,7 @@
                 >Roof painting or Spraying
               </a>
               <a class="dropdown-item" href="Tiling.html">Tiling</a>
-              <a class="dropdown-item" href="Fencing.html">Plumbing</a>
+              <a class="dropdown-item" href="Plumbing.html">Plumbing</a>
               <a class="dropdown-item" href="Maintenaces.html">Maintenances</a>
               <a class="dropdown-item" href="Repairs.html">Building Repairs </a>
             </div>
@@ -86,7 +86,7 @@
       id="DivTitle"
       style="
         width: 100%;
-        background-image: url(../img/Bathroom.png);
+        background-image: url(../img/HomeAddExp/Title.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-color: White;
@@ -134,7 +134,6 @@
       id="carouselExampleIndicators"
       class="carousel slide d-flex justify-content-center"
       data-ride="carousel"
-      style="height: 6.5cm"
     >
       <ol class="carousel-indicators">
         <li
@@ -149,7 +148,7 @@
       <!-- <h3 id="PageHeader" class="text-center">Home</h3> -->
       <div class="carousel-inner">
         <div class="row">
-          <div class="col-md">
+          <div class="col-md" id="div1">
             <!-- <h2 class="center">Bathroom</h2> -->
           </div>
         </div>
@@ -158,20 +157,23 @@
             class="img-responsive d-block w-100 sizeChange"
             src="img/Logo.png"
             alt="First slide"
+            id="Img1"
           />
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" id="div2">
           <img
             class="img-responsive d-block w-100 sizeChange"
             src="img/Bathroom.png"
             alt="Second slide"
+            id="Img2"
           />
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" id="div3">
           <img
             class="img-responsive d-block w-100 sizeChange"
             src="img/team-engineer-holding-helmet-standing-260nw-1936767382.webp"
             alt="Third slide"
+            id="Img3"
           />
         </div>
       </div>
@@ -206,7 +208,7 @@
           <div class="col-sm">
             <h4 class="text-center fontsizeHeader">Services</h4>
             <p class="text-center fontsize">
-              <a class="footerLinks" href="Plumbing.html">Bathroom</a>
+              <a class="footerLinks" href="Bathroom.html">Bathroom</a>
             </p>
             <p class="text-center fontsize">
               <a class="footerLinks" href="HomeAddExp.html"
@@ -222,7 +224,7 @@
               <a class="footerLinks" href="Tiling.html">Tiling</a>
             </p>
             <p class="text-center fontsize">
-              <a class="footerLinks" href="Fencing.html">Plumbing</a>
+              <a class="footerLinks" href="Plumbing.html">Plumbing</a>
             </p>
             <p class="text-center fontsize">
               <a class="footerLinks" href="Maintenaces.html">Maintenance</a>
@@ -296,8 +298,35 @@
       if (screen.width <= 720 && screen.height <= 1280) {
         // document.getElementById("Title").style.marginLeft = "-0cm";
         document.getElementById("DivTitle").style.padding = "0.4";
+        document.getElementById("DivTitle").style.padding = "0.4cm";
+
+        document.getElementById("Img1").src = "../img/Bathroom/Mobile/1.jpg";
+        document.getElementById("Img1").style.width = "95%";
+        document.getElementById("div1").style.marginLeft = "0.3cm";
+        // .setAttribute("src", "../img/Bathroom/20211027_155339 (2).jpg");
+
+        document.getElementById("Img2").src = "../img/Bathroom/Mobile/2.jpg";
+        document.getElementById("Img2").style.width = "100%";
+        document
+          .getElementById("Img3")
+          .setAttribute("src", "../img/Bathroom/Mobile/3.jpg");
+        document.getElementById("Img3").style.width = "100%";
       } else {
         document.getElementById("DivTitle").style.padding = "1.7cm";
+        document.getElementById("DivTitle").style.padding = "1.7cm";
+
+        // document.getElementById("Iamge1").style.backgroundImage =
+        //   "Url(../img/Bathroom/Desktop/1.jpg)";
+        document.getElementById("Img1").src = "../img/Bathroom/Desktop/1.jpg";
+
+        document.getElementById("Img1").style.width = "100%";
+        document.getElementById("Img1").style.height = "10%";
+
+        document.getElementById("Img2").src = "../img/Bathroom/Desktop/2.jpg";
+        document.getElementById("Img2").style.width = "100%";
+
+        document.getElementById("Img3").src = "../img/Bathroom/Desktop/3.jpg";
+        document.getElementById("Img3").style.width = "10%";
       }
     </script>
     <script
