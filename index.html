@@ -103,17 +103,6 @@
         >
           Home
         </h2>
-        <li
-          data-target="#carouselExampleIndicators"
-          data-slide-to="0"
-          class="active"
-        ></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
       </ol>
       <!-- <h3 id="PageHeader" class="text-center">Home</h3> -->
       <div class="carousel-inner">
@@ -166,24 +155,6 @@
           />
         </div>
       </div>
-      <a
-        class="carousel-control-prev"
-        href="#carouselExampleIndicators"
-        role="button"
-        data-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a
-        class="carousel-control-next"
-        href="#carouselExampleIndicators"
-        role="button"
-        data-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
 
     <div class="container-fluid" style="padding-top: 0.5cm" id="ProjectTiles">
@@ -410,7 +381,7 @@
 
       // getResolution();
       if (screen.width <= 720 && screen.height <= 1280) {
-        document.getElementById("Title").style.marginRight = "-6.7cm";
+        document.getElementById("Title").style.marginRight = "-0cm";
         document.getElementById("Title").style.marginTop = "-3.6cm";
         document.getElementById("Img1").src = "img/HomePage/M1.jpg";
         document.getElementById("Img2").src = "img/HomePage/M2.jpg";
@@ -421,6 +392,7 @@
       } else {
         //Images
         document.getElementById("ProjectTiles").style.marginLeft = "2cm";
+        document.getElementById("Title").style.marginLeft = "-3cm";
         document.getElementById("Img1").src = "img/HomePage/1.jpg";
         document.getElementById("Img2").src = "img/HomePage/2.jpg";
         document.getElementById("Img3").src = "img/HomePage/3.jpg";
