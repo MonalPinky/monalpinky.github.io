@@ -140,7 +140,6 @@
       id="carouselExampleIndicators"
       class="carousel slide d-flex justify-content-center"
       data-ride="carousel"
-      style="height: 6.5cm"
     >
       <ol class="carousel-indicators">
         <li
@@ -151,33 +150,77 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
       </ol>
       <!-- <h3 id="PageHeader" class="text-center">Home</h3> -->
-      <div class="carousel-inner">
+      <div class="carousel-inner" id="width">
         <div class="row">
           <div class="col-md">
             <!-- <h2 class="center">Bathroom</h2> -->
           </div>
         </div>
-        <div class="carousel-item active">
-          <img
-            class="img-responsive d-block w-100 sizeChange"
-            src="img/Logo.png"
-            alt="First slide"
-          />
+        <div class="carousel-item active" id="div1">
+          <img srcset="" alt="First Slide" id="Img1" />
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" id="div2">
           <img
             class="img-responsive d-block w-100 sizeChange"
-            src="img/Bathroom.png"
+            src=""
             alt="Second slide"
+            id="Img2"
           />
+          <div id="Iamge1"></div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" id="div3">
           <img
             class="img-responsive d-block w-100 sizeChange"
-            src="img/team-engineer-holding-helmet-standing-260nw-1936767382.webp"
+            src=""
             alt="Third slide"
+            id="Img3"
+          />
+        </div>
+        <div class="carousel-item" id="div4">
+          <img
+            class="img-responsive d-block w-100 sizeChange"
+            src=""
+            alt="Third slide"
+            id="Img4"
+          />
+        </div>
+        <div class="carousel-item" id="div5">
+          <img
+            class="img-responsive d-block w-100 sizeChange"
+            src=""
+            alt="Third slide"
+            id="Img5"
+          />
+        </div>
+        <div class="carousel-item" id="div6">
+          <img
+            class="img-responsive d-block w-100 sizeChange"
+            src=""
+            alt="Third slide"
+            id="Img6"
+          />
+        </div>
+        <div class="carousel-item" id="div7">
+          <img
+            class="img-responsive d-block w-100 sizeChange"
+            src=""
+            alt="Third slide"
+            id="Img7"
+          />
+        </div>
+        <div class="carousel-item" id="div8">
+          <img
+            class="img-responsive d-block w-100 sizeChange"
+            src=""
+            alt="Third slide"
+            id="Img8"
           />
         </div>
       </div>
@@ -186,6 +229,7 @@
         href="#carouselExampleIndicators"
         role="button"
         data-slide="prev"
+        id="indicatorleft"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -195,6 +239,7 @@
         href="#carouselExampleIndicators"
         role="button"
         data-slide="next"
+        id="indicatorright"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
@@ -301,8 +346,84 @@
       if (screen.width <= 720 && screen.height <= 1280) {
         // document.getElementById("Title").style.marginLeft = "-0cm";
         document.getElementById("DivTitle").style.padding = "0.3cm";
+        document.getElementById("Img1").src = "../img/Bathroom/Mobile/1.jpg";
+        document.getElementById("Img1").style.width = "95%";
+        document.getElementById("div1").style.marginLeft = "0.3cm";
+        // .setAttribute("src", "../img/Bathroom/20211027_155339 (2).jpg");
+
+        document.getElementById("Img2").src = "../img/Bathroom/Mobile/2.jpg";
+        document.getElementById("Img2").style.width = "100%";
+        document
+          .getElementById("Img3")
+          .setAttribute("src", "../img/Bathroom/Mobile/3.jpg");
+        document.getElementById("Img3").style.width = "100%";
+        document.getElementById("Img3").src = "../img/Bathroom/Desktop/3.jpg";
+        document.getElementById("Img3").style.width = "10%";
+
+        document.getElementById("Img4").src = "../img/Bathroom/Desktop/4.jpg";
+
+        document.getElementById("Img4").style.width = "100%";
+        document.getElementById("Img4").style.height = "10%";
+
+        document.getElementById("Img5").src = "../img/Bathroom/Desktop/5.jpg";
+
+        document.getElementById("Img5").style.width = "100%";
+        document.getElementById("Img5").style.height = "10%";
+
+        document.getElementById("Img6").src = "../img/Bathroom/Desktop/6.jpg";
+
+        document.getElementById("Img6").style.width = "100%";
+        document.getElementById("Img6").style.height = "10%";
+
+        document.getElementById("Img7").src = "../img/Bathroom/Desktop/7.jpg";
+
+        document.getElementById("Img7").style.width = "100%";
+        document.getElementById("Img7").style.height = "10%";
+
+        document.getElementById("Img8").src = "../img/Bathroom/Desktop/8.jpg";
+
+        document.getElementById("Img8").style.width = "100%";
+        document.getElementById("Img8").style.height = "10%";
       } else {
         document.getElementById("DivTitle").style.padding = "1.7cm";
+        document.getElementById("Img1").src = "../img/Bathroom/Desktop/1.jpg";
+
+        document.getElementById("Img1").style.width = "100%";
+        document.getElementById("Img1").style.height = "10%";
+
+        document.getElementById("Img2").src = "../img/Bathroom/Desktop/2.jpg";
+        document.getElementById("Img2").style.width = "100%";
+
+        document.getElementById("Img3").src = "../img/Bathroom/Desktop/3.jpg";
+        document.getElementById("Img3").style.width = "10%";
+
+        document.getElementById("Img4").src = "../img/Bathroom/Desktop/4.jpg";
+
+        document.getElementById("Img4").style.width = "100%";
+        document.getElementById("Img4").style.height = "10%";
+
+        document.getElementById("Img5").src = "../img/Bathroom/Desktop/5.jpg";
+
+        document.getElementById("Img5").style.width = "100%";
+        document.getElementById("Img5").style.height = "10%";
+
+        document.getElementById("Img6").src = "../img/Bathroom/Desktop/6.jpg";
+
+        document.getElementById("Img6").style.width = "100%";
+        document.getElementById("Img6").style.height = "10%";
+
+        document.getElementById("Img7").src = "../img/Bathroom/Desktop/7.jpg";
+
+        document.getElementById("Img7").style.width = "100%";
+        document.getElementById("Img7").style.height = "10%";
+
+        document.getElementById("Img8").src = "../img/Bathroom/Desktop/8.jpg";
+
+        document.getElementById("Img8").style.width = "100%";
+        document.getElementById("Img8").style.height = "10%";
+        document.getElementById("width").style.width = "70%";
+        document.getElementById("indicatorleft").style.marginLeft = "4cm";
+        document.getElementById("indicatorright").style.marginRight = "4cm";
       }
     </script>
     <script
