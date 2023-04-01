@@ -89,17 +89,7 @@
     <!-- <div class="center">
       <h2 class="text-center">Home</h2>
     </div> -->
-    <div
-      id="DivTitle"
-      class="Container-fluid"
-      style="
-        width: 100%;
-        background-image: url(../img/Aboutus/Title.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: white;
-      "
-    >
+    <div id="DivTitle" class="Container-fluid">
       <h2
         class="text-center"
         id="Title"
@@ -358,6 +348,9 @@
       if (screen.width <= 720 && screen.height <= 1280) {
         document.getElementById("Title").style.marginLeft = "-0cm";
         document.getElementById("DivTitle").style.padding = "1cm";
+        document.getElementById("DivTitle").style.width = "100%";
+        document.getElementById("DivTitle").style.backgroundImage =
+          "url(../img/Aboutus/MTitle.jpg)";
 
         document.getElementById("Img1").src = "../img/Bathroom/Mobile/1.jpg";
         document.getElementById("Img1").style.width = "95%";
