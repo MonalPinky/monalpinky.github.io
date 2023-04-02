@@ -84,11 +84,10 @@
     class="Container-fluid backgroundReno"
     id="DivTitle"
     style="
-      width: 100%;
-      background-image: url(../img/Contact/Title.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-color:white;
+     
+     background-repeat: no-repeat;
+        background-position: center;
+        background-color: white;
     "
   >
     <h2 class="text-center center" 
@@ -267,9 +266,17 @@
       if (screen.width <= 720 && screen.height <= 1280) {
         document.getElementById("Title").style.marginLeft = "-1.86m";
         document.getElementById("DivTitle").style.padding = "1cm"
+        document.getElementById("DivTitle").style.width = "100%";
+        document.getElementById("DivTitle").style.backgroundImage =
+          "url(../img/Contact/MTitle.jpg)";
       }
       else{
         document.getElementById("DivTitle").style.padding = "1.7cm"
+        document.getElementById("DivTitle").style.padding = "1.7cm";
+
+document.getElementById("DivTitle").style.width = "100%";
+document.getElementById("DivTitle").style.backgroundImage =
+  "url(../img/Contact/Title.jpg)";
       }
     </script>
     <script

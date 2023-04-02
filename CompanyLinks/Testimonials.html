@@ -67,11 +67,8 @@
                 >Plumbing</a
               >
               <a class="dropdown-item" href="../Services/Maintenaces.html"
-                >Maintenances</a
+                >Maintenances & Building Repairs</a
               >
-              <a class="dropdown-item" href="../Services/Repairs.html"
-                >Building Repairs
-              </a>
             </div>
           </li>
           <li class="nav-item">
@@ -96,11 +93,9 @@
       class="Container-fluid backgroundReno"
       id="DivTitle"
       style="
-        width: 100%;
-        background-image: url(../img/Bathroom.png);
+        background-color: white;
         background-repeat: no-repeat;
         background-position: center;
-        background-color: white;
       "
     >
       <h2
@@ -365,6 +360,10 @@
       if (screen.width <= 720 && screen.height <= 1280) {
         document.getElementById("Title").style.marginLeft = "-0.4cm";
         document.getElementById("DivTitle").style.padding = "1cm";
+        document.getElementById("DivTitle").style.padding = "1cm";
+        document.getElementById("DivTitle").style.width = "100%";
+        document.getElementById("DivTitle").style.backgroundImage =
+          "url(../img/Testamonial/MTitle.jpg)";
 
         document.getElementById("Img1").src = "../img/Bathroom/Mobile/1.jpg";
         document.getElementById("Img1").style.width = "95%";
@@ -406,7 +405,11 @@
         document.getElementById("Img8").style.height = "10%";
       } else {
         document.getElementById("DivTitle").style.padding = "1.7cm";
+        document.getElementById("DivTitle").style.width = "100%";
+        document.getElementById("DivTitle").style.backgroundImage =
+          "url(../img/Testamonial/Title.jpg)";
 
+        document.getElementById("DivTitle").style.imageOrientation = "Center";
         //   "Url(../img/Bathroom/Desktop/1.jpg)";
         document.getElementById("Img1").src = "../img/Bathroom/Desktop/1.jpg";
 
