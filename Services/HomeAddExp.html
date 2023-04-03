@@ -87,7 +87,7 @@
       id="DivTitle"
       style="
         width: 100%;
-        background-image: url(../img/HomeAddExp/Title.jpg);
+
         background-repeat: no-repeat;
         background-position: center;
         background-color: White;
@@ -130,7 +130,7 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="5"></li> -->
+        <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
       </ol>
       <!-- <h3 id="PageHeader" class="text-center">Home</h3> -->
       <div class="carousel-inner" id="width">
@@ -298,7 +298,8 @@
         // document.getElementById("Title").style.marginLeft = "-0cm";
         document.getElementById("DivTitle").style.padding = "0.4";
         document.getElementById("DivTitle").style.padding = "0.4cm";
-
+        document.getElementById("DivTitle").style.backgroundImage =
+          "url(../img/HomeAddExp/MTitle.jpg)";
         document.getElementById("Img1").src = "../img/HomeAddExp/1.jpg";
         document.getElementById("Img1").style.width = "95%";
         document.getElementById("div1").style.marginLeft = "0.3cm";
@@ -340,7 +341,8 @@
       } else {
         document.getElementById("DivTitle").style.padding = "1.7cm";
         document.getElementById("DivTitle").style.padding = "1.7cm";
-
+        document.getElementById("DivTitle").style.backgroundImage =
+          "url(../img/HomeAddExp/Title.jpg)";
         document.getElementById("Img1").src = "../img/HomeAddExp/1.jpg";
 
         document.getElementById("Img1").style.width = "100%";
