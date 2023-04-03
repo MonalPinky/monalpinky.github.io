@@ -86,7 +86,6 @@
       class="Container-fluid"
       id="DivTitle"
       style="
-        background-image: url(../img/Maintences/Title.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-color: white;
@@ -340,7 +339,8 @@
       if (screen.width <= 720 && screen.height <= 1280) {
         document.getElementById("Title").style.marginLeft = "-0.2cm";
         document.getElementById("DivTitle").style.padding = "0.4cm";
-
+        document.getElementById("DivTitle").style.backgroundImage =
+          "url(../img/Maintences/MTitle.jpg)";
         document.getElementById("Img1").src = "../img/Maintences/1.jpg";
         document.getElementById("Img1").style.width = "95%";
         document.getElementById("div1").style.marginLeft = "0.3cm";
@@ -381,7 +381,8 @@
         document.getElementById("Img8").style.height = "10%";
       } else {
         document.getElementById("DivTitle").style.padding = "1.7cm";
-
+        document.getElementById("DivTitle").style.backgroundImage =
+          "url(../img/Maintences/Title.jpg)";
         document.getElementById("Img1").src = "../img/Maintences/1.jpg";
 
         document.getElementById("Img1").style.width = "100%";

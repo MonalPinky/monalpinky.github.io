@@ -88,7 +88,7 @@
       id="DivTitle"
       style="
         width: 100%;
-        background-image: url(../img/Plumbing/Title.jpg);
+
         background-repeat: no-repeat;
         background-position: center;
         background-color: white;
@@ -147,10 +147,6 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
       </ol>
       <!-- <h3 id="PageHeader" class="text-center">Home</h3> -->
       <div class="carousel-inner" id="width">
@@ -193,30 +189,6 @@
             src=""
             alt="Third slide"
             id="Img5"
-          />
-        </div>
-        <div class="carousel-item" id="div6">
-          <img
-            class="img-responsive d-block w-100 sizeChange"
-            src=""
-            alt="Third slide"
-            id="Img6"
-          />
-        </div>
-        <div class="carousel-item" id="div7">
-          <img
-            class="img-responsive d-block w-100 sizeChange"
-            src=""
-            alt="Third slide"
-            id="Img7"
-          />
-        </div>
-        <div class="carousel-item" id="div8">
-          <img
-            class="img-responsive d-block w-100 sizeChange"
-            src=""
-            alt="Third slide"
-            id="Img8"
           />
         </div>
       </div>
@@ -342,7 +314,8 @@
       if (screen.width <= 720 && screen.height <= 1280) {
         // document.getElementById("Title").style.marginLeft = "-1.7cm";
         document.getElementById("DivTitle").style.padding = " 1cm";
-
+        document.getElementById("DivTitle").style.backgroundImage =
+          "url(../img/Plumbing/MTitle.jpg)";
         document.getElementById("Img1").src = "../img/Plumbing/1.jpg";
         document.getElementById("Img1").style.width = "95%";
         document.getElementById("div1").style.marginLeft = "0.3cm";
@@ -366,24 +339,10 @@
 
         document.getElementById("Img5").style.width = "100%";
         document.getElementById("Img5").style.height = "10%";
-
-        document.getElementById("Img6").src = "../img/Plumbing/6.jpg";
-
-        document.getElementById("Img6").style.width = "100%";
-        document.getElementById("Img6").style.height = "10%";
-
-        document.getElementById("Img7").src = "../img/Plumbing/7.jpg";
-
-        document.getElementById("Img7").style.width = "100%";
-        document.getElementById("Img7").style.height = "10%";
-
-        document.getElementById("Img8").src = "../img/Plumbing/8.jpg";
-
-        document.getElementById("Img8").style.width = "100%";
-        document.getElementById("Img8").style.height = "10%";
       } else {
         document.getElementById("DivTitle").style.padding = "1.7cm";
-
+        document.getElementById("DivTitle").style.backgroundImage =
+          "url(../img/Plumbing/Title.jpg)";
         // document.getElementById("Iamge1").style.backgroundImage =
         //   "Url(../img/Plumbing/1.jpg)";
         document.getElementById("Img1").src = "../img/Plumbing/1.jpg";
@@ -407,20 +366,6 @@
         document.getElementById("Img5").style.width = "100%";
         document.getElementById("Img5").style.height = "10%";
 
-        document.getElementById("Img6").src = "../img/Plumbing/6.jpg";
-
-        document.getElementById("Img6").style.width = "100%";
-        document.getElementById("Img6").style.height = "10%";
-
-        document.getElementById("Img7").src = "../img/Plumbing/7.jpg";
-
-        document.getElementById("Img7").style.width = "100%";
-        document.getElementById("Img7").style.height = "10%";
-
-        document.getElementById("Img8").src = "../img/Plumbing/8.jpg";
-
-        document.getElementById("Img8").style.width = "100%";
-        document.getElementById("Img8").style.height = "10%";
         document.getElementById("width").style.width = "70%";
         document.getElementById("indicatorleft").style.marginLeft = "4cm";
         document.getElementById("indicatorright").style.marginRight = "4cm";
